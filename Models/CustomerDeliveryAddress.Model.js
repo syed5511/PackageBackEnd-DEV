@@ -8,7 +8,7 @@ const CustomerDeliveryAddressSchema = mongoose.model ('CustomerDeliveryAddress',
     
 
     email:{type:String, maxlength:25,required:true,trim:true,lowercase: true},
-    customer_uid:{type:String, maxlength:25,required:true,trim:true,lowercase: true},
+    //customer_uid:{type:String, maxlength:25,required:true,trim:true,lowercase: true},
     address:{type:String, maxlength:25,required:true,trim:true,lowercase: true},
     state:{type:String, maxlength:10,required:true,trim:true,lowercase: true},
     city:{type:String, maxlength:10,required:true,trim:true,lowercase: true},
