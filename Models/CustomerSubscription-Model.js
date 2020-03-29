@@ -14,6 +14,7 @@ const CustomerSubscriptionSchema = mongoose.model ('CustomerSubscription', new m
     package_type:{type:String,required:true,trim:true},
     serving_plates:{type:Number,maxlength:2,required:true,trim:true},
     free_plates:{type:Number,maxlength:2,trim:true},
+    complemetary_plate:{type:Number,maxlength:2,trim:true},
     total_plates:{type:Number,maxlength:3,required:true,trim:true},
     discount_type:{type:String,maxlength:15,trim:true},
     dicount_code:{type:String,maxlength:10,trim:true},

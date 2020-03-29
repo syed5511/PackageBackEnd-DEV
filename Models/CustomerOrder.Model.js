@@ -3,7 +3,7 @@ mongoose.set('debug',true)
 mongoose.set('useCreateIndex', true);
 
 
-const CustomerPlatesSchema = mongoose.model ('CustomerPlates', new mongoose.Schema({
+const CustomerOrderSchema = mongoose.model ('CustomerOrder', new mongoose.Schema({
 
 
     
@@ -22,6 +22,6 @@ const CustomerPlatesSchema = mongoose.model ('CustomerPlates', new mongoose.Sche
     }
 }));
 
-exports.CustomerPlatesSchema = CustomerPlatesSchema;
+exports.CustomerOrderSchema = CustomerOrderSchema;
 
 
