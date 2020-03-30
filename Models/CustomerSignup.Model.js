@@ -14,7 +14,7 @@ const CustomerSignupSchema = mongoose.model ('CustomerSignup', new mongoose.Sche
     device_type:{type:String, maxlength:10,required:true,trim:true,lowercase: true},
     stripe_id:{type:String,required:true,trim:true},
     isPaymentAvaiable : {type:Boolean,default:true},
-    status:{type:Number,default:false},
+    status:{type:String,default:false},
     create_at : { type: Date, required: true, default: Date.now }
     
     
