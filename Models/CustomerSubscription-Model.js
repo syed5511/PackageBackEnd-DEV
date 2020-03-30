@@ -7,7 +7,7 @@ const CustomerSubscriptionSchema = mongoose.model ('CustomerSubscription', new m
 
   
 
-    email:{type:String, maxlength:25,required:true,trim:true,lowercase: true},
+    customer_email:{type:String, maxlength:25,required:true,trim:true,lowercase: true},
     //customer_uid:{type:String, maxlength:25,required:true,trim:true,lowercase: true},
     stripe_id:{type:String,required:true,trim:true},
     stripe_transaction:{type:String,required:true,trim:true},

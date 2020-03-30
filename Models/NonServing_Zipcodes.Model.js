@@ -7,7 +7,7 @@ const NonServingZipcodeSchema = mongoose.model ('NonServingZipcode', new mongoos
 
    
 
-    email:{type:String, maxlength:25,required:true,trim:true,lowercase: true},
+    customer_email:{type:String, maxlength:25,required:true,trim:true,lowercase: true},
     firstName:{type:String, maxlength:25,required:true,trim:true,lowercase: true},
     lastName:{type:String, maxlength:25,required:true,trim:true,lowercase: true},
     zip_code:{type:String, maxlength:5,required:true,trim:true,lowercase: true},

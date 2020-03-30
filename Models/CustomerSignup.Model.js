@@ -8,7 +8,7 @@ const CustomerSignupSchema = mongoose.model ('CustomerSignup', new mongoose.Sche
 
     firstName:{type:String, maxlength:25,required:true,trim:true,lowercase: true},
     lastName:{type:String, maxlength:25,required:true,trim:true,lowercase: true},
-    email:{type:String,required:true,unique:true,trim:true,},
+    customer_email:{type:String,required:true,unique:true,trim:true},
     zipcode:{type:Number, required:true},
     password:{type:String,minlength:4,maxlength:250,required:true,trim:true},
     device_type:{type:String, maxlength:10,required:true,trim:true,lowercase: true},
