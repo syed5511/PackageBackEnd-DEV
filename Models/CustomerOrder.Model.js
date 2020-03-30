@@ -8,7 +8,7 @@ const CustomerOrderSchema = mongoose.model ('CustomerOrder', new mongoose.Schema
 
     
     customer_email:{type:String,required:true,unique:true,trim:true,},
-    orders:[{ "order_no" : String,required: true,trim:true,lowercase: true },{ "order_date" : String,required: true,trim:true,lowercase: true }],
+    order_no:[{ type : String,required: true,trim:true,lowercase: true }],
     stripe_transaction:{type:String,required:true,trim:true},
     kitchen_name:{type:String,required:true,trim:true,lowercase: true},
     item_type:{type:String,required:true,trim:true,lowercase: true},
